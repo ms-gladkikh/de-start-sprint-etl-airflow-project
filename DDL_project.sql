@@ -8,11 +8,12 @@ ALTER TABLE mart.f_sales ADD COLUMN status VARCHAR(20) DEFAULT 'shipped';
  * После чего удалила лишний создавшийся столбец: */
 ALTER TABLE staging.user_order_log DROP COLUMN id; 
 
-/* В даге внесла сови данные в двух строчках:
+/* В даге sprint3.py внесла свои данные в двух строчках:
  * nickname = 'gladkikhms'
  * cohort = '18'
  * после чего запустила его на выполнение. Даг добавил данные из файла user_order_log_inc.csv в staging.user_order_log,
- * а также заполнил таблицы схемы mart (d_city, d_customer, d_item, f_sales) */
+ * а также заполнил таблицы схемы mart (d_city, d_customer, d_item, f_sales) . Для этого он выполнял запросы из файлов 
+* mart.d_city.sql, mart.d_customer.sql, mart.d_item.sql, mart.f_sales.sql */
 
 /* Этап 2 проекта. 
    Создание витрины f_customer_retention */

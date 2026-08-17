@@ -36,7 +36,8 @@ args = {
     'email': ['student@example.com'],
     'email_on_failure': False,
     'email_on_retry': False,
-    'retries': 0
+# добавила попытки
+    'retries': 5
 }
 
 business_dt = '{{ ds }}'
